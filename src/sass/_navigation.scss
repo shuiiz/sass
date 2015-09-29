@@ -1,0 +1,43 @@
+.flex {
+	@include display-flex;
+	flex-direction:row;
+	justify-content:center;
+	padding:0;
+	list-style:none;
+}
+
+.spacing {
+	margin:0 .5em;
+}
+
+nav {
+
+	ul {
+	padding:0;
+	list-style:none;
+
+		li {
+			@include display-flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:stretch;
+
+			a { 
+				display:block;
+				padding: 2em 5em;
+				margin-bottom:1em;
+				text-align:center;
+				background:$color-background-nav;
+				@include gradient(#000,#eee);
+				@include shadow();
+				@include bdradius(15px 0 15px 0);
+				color:#000000;
+				&:hover {
+					transition:ease-in-out .5s;
+					background:#000000;
+					color:#FFFFFF;
+				}
+			}
+		}
+	}
+}

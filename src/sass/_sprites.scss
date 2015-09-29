@@ -1,0 +1,12 @@
+// Sprites
+
+@import "compass/utilities/sprites";
+@import "sprites-sources/*.png";
+@include all-sprites-sources-sprites;
+
+.spritedb {
+	display:block;
+	list-style:none;
+	width:33px;
+	height:33px;
+}
